@@ -1,0 +1,321 @@
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #333;
+
+}
+
+
+
+/* Container */
+
+.container {
+
+    display: flex;
+
+    height: 100vh;
+
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+
+    width: 20%;
+
+    background-color: #000;
+
+    padding: 20px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+
+.sidebar h2 {
+
+    display: flex;
+
+    align-items: center;
+
+    font-size: 18px;
+
+}
+
+
+
+.sidebar .icon {
+
+    font-size: 24px;
+
+    margin-right: 10px;
+
+}
+
+
+
+.compose-btn {
+
+    padding: 10px 20px;
+
+    background-color: orange;
+
+    color: White;
+
+    border: none;
+
+    border-radius: 4px;
+    font-size: 16px;
+
+
+}
+
+
+
+.folder-list p {
+
+    margin: 10px 0;
+
+    font-size: 16px;
+
+    color: white;
+
+}
+
+
+
+/* Mail Content */
+
+.mail-content {
+
+    width: 40%;
+
+    padding: 20px;
+
+    border-right: 1px solid #ccc;
+
+    background-color: #e0e0e0; /* Light gray background */
+
+}
+
+
+
+.search-bar input {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+}
+
+
+
+.email-list {
+
+    margin-top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+
+.email-item {
+
+    padding: 15px;
+
+    
+
+    border-radius: 4px;
+
+    background-color: #e0e0e0; /* Default gray background */
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    cursor: pointer; /* Makes the items look clickable */
+
+    transition: background-color 0.3s; /* Smooth transition for background color */
+
+}
+
+
+
+/* Selected Email Item */
+
+.email-item.selected {
+
+    background-color: #ffffff; /* Highlight selected item with white */
+
+    border: 1px solid #ccc; /* Slightly darker border for the selected item */
+
+}
+
+
+
+.email-item p {
+
+    margin: 5px 0;
+
+}
+
+
+
+/* Email Time */
+
+.email-time {
+
+    margin-left: auto;
+
+    font-size: 14px;
+
+    white-space: nowrap; /* Prevents wrapping to a new line */
+
+}
+
+
+
+/* Mail Description */
+
+.mail-description {
+
+    width: 40%;
+
+    padding: 20px;
+
+    background-color: #f9f9f9;
+
+}
+
+
+
+.mail-description p {
+
+    margin: 10px 0;
+
+}
+
+
+
+.mail-description textarea {
+
+    width: 100%;
+
+    height: 100px;
+
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+}
+
+    .send-btn {
+      background-color: orange; /* Green background */
+      color: white; /* White text */
+      border: none;
+      padding: 9px 8px; /* Padding */
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 3px; /* Rounded corners */
+    }
+
+    /* For smaller screens */
+    @media (max-width: 40px) {
+      .send-btn {
+        width: 10%; 
+      }
+    }
+
+
+/* Mobile View */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        flex-direction: column;
+
+        height: auto;
+
+    }
+
+
+
+    .sidebar {
+
+        width: 100%;
+
+        order: 1;
+
+    }
+
+
+
+    .mail-content {
+
+        width: 100%;
+
+        order: 2;
+
+        border-right: none;
+
+        padding: 10px;
+
+    }
+
+
+
+    .mail-description {
+
+        width: 100%;
+
+        order: 3;
+
+        padding: 10px;
+
+    }
+
+}

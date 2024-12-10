@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Email Interface</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar Section -->
+
+    <aside class="sidebar">
+
+      <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      </head>
+      <body>
+        <h2><i class="fas fa-user"></i> Welcome, Brock!</h2>
+      </body>
+
+      <button class="compose-btn">Compose</button>
+
+      <div class="folder-list">
+
+        <p>Inbox <span class="unread-count">(1)</span></p>
+
+        <p>Tagged</p>
+
+        <p>Important</p>
+
+        <p>Sent Mail</p>
+
+        <p>Drafts</p>
+
+        <p>Trash</p>
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- Mail Content Section -->
+
+    <section class="mail-content">
+
+      <!-- Search Bar -->
+
+      <div class="search-bar">
+
+        <input type="text" placeholder="Search for Emails">
+
+      </div>
+
+
+
+      <!-- Email List -->
+
+      <div class="email-list">
+
+        <div class="email-item">
+
+          <div>
+
+            <p>LinkedIn</p>
+
+            <p>You have a new connection Request</p>
+
+          </div>
+
+          <p class="email-time">02:45 PM</p>
+
+        </div>
+
+        <div class="email-item selected">
+
+          <div>
+
+            <p>Michael Scott Daily Quote</p>
+
+            <p>"I'm optimistic because every day I get...</p>
+
+          </div>
+
+          <p class="email-time">Jul 3, 2020</p>
+
+        </div>
+
+        <div class="email-item">
+
+          <div>
+
+            <p>Lemar Software</p>
+
+            <p>Learn how you can give us money by...</p>
+
+          </div>
+
+          <p class="email-time">Feb 9, 2020</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Mail Description Section -->
+
+    <section class="mail-description">
+
+      <p>To:taylor@lamarsoftware.io</p>
+
+      <p>From:  re-reply@theofficenbc.com</p>
+
+      <h2>Michael Scott Daily Quotes</h2>
+
+      <div class="email-body">
+
+        <p>"Friends joke with one another. 'Hey, your momma's dead.' That's what friends do."</p>
+
+        <p>"It's a good thing Russia doesn't exist anymore."</p>
+
+        <p>"You cheated on me? When I specifically asked you not to?"</p>
+
+        <p>"It just seems awfully mean. But sometimes, the ends justify the mean!"</p>
+
+        <p>"Reverse psychology is an awesome tool. It tricks them into doing something stupid. Works like a charm!"</p>
+
+      </div>
+
+      <head>
+        <style>
+          textarea {
+            font-family: sans-serif;
+            font-size: 16px; /
+       
+          }
+        </style>
+        <textarea placeholder="Enter Message..."></textarea>
+
+      <button class="send-btn">Send Email</button>
+
+    </section>
+
+  </div>
+
+</body>
+
+</html>
